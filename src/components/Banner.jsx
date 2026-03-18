@@ -1,3 +1,7 @@
+import BannerButton from "../shared/BannerButton";
+import play from "../assets/app.png";
+import app from "../assets/app-store.png";
+
 const Banner = () => {
   return (
     <header className="bg-[#F5F5F5] font-inter py-12 lg:py-20">
@@ -17,7 +21,18 @@ const Banner = () => {
           ideas into digital experiences that truly make an impact.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6"></div>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
+          <BannerButton
+            link="https://play.google.com/store"
+            img={play}
+            text="Google Play"
+          ></BannerButton>
+          <BannerButton
+            link="https://www.apple.com/app-store/"
+            img={app}
+            text="App Store"
+          ></BannerButton>
+        </div>
       </div>
     </header>
   );
