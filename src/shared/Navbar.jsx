@@ -48,8 +48,8 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="border-b border-[#E9E9E9] backdrop-blur-xs font-inter sticky top-0 z-50">
-      <div className="navbar container w-11/12 mx-auto">
+    <nav className="border-b border-[#E9E9E9] backdrop-blur-2xl font-inter sticky top-0 z-50">
+      <div className="navbar container w-11/12 mx-auto p-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
