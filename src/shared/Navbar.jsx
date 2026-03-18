@@ -48,7 +48,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="border-b border-[#E9E9E9] sticky top-0 z-50">
+    <nav className="border-b border-[#E9E9E9] font-inter sticky top-0 z-50">
       <div className="navbar container w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
