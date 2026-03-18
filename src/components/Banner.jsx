@@ -1,6 +1,7 @@
 import BannerButton from "../shared/BannerButton";
 import play from "../assets/app.png";
 import app from "../assets/app-store.png";
+import banner from "../assets/hero.png";
 
 const Banner = () => {
   return (
@@ -32,6 +33,14 @@ const Banner = () => {
             img={app}
             text="App Store"
           ></BannerButton>
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <img
+            src={banner}
+            alt="banner"
+            className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-4xl"
+          />
         </div>
       </div>
     </header>
