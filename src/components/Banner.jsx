@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <header className="bg-[#F5F5F5] font-inter py-12 lg:py-20">
       <div className="container w-11/12 mx-auto text-center">
-        <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight text-base-content">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-base-content">
           We Build
           <br />
           <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-black">
