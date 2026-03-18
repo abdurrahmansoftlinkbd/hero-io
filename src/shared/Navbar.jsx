@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import logo from "../assets/logo.png";
+import GradientButton from "./GradientButton";
 
 const Navbar = () => {
   const links = (
@@ -86,9 +87,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn rounded-md text-white border-none bg-[linear-gradient(140deg,#632EE3,#9F62F2)]">
-            Contribute
-          </button>
+          <GradientButton text="Contribute"></GradientButton>
         </div>
       </div>
     </nav>
