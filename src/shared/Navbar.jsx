@@ -1,6 +1,7 @@
 import { NavLink } from "react-router";
 import logo from "../assets/logo.png";
 import GradientButton from "./GradientButton";
+import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const links = (
@@ -87,7 +88,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <GradientButton text="Contribute"></GradientButton>
+          <GradientButton
+            icon={<FaGithub size={20} />}
+            text="Contribute"
+          ></GradientButton>
         </div>
       </div>
     </nav>
