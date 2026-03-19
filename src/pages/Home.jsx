@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import TrendingApps from "../components/TrendingApps";
 import TrustedStats from "../components/TrustedStats";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <Banner></Banner>
       <TrustedStats></TrustedStats>
+      <TrendingApps></TrendingApps>
     </>
   );
 };
