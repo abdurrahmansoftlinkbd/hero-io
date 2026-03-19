@@ -1,4 +1,25 @@
+import { useEffect, useState } from "react";
+import Skeleton from "./Skeleton";
+import axios from "axios";
+
 const TrendingApps = () => {
+  const [apps, setApps] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchApps = async () => {
+      try {
+        const res = await axios.get("/apps.json");
+        setApps(res.data.slice(0, 8));
+      } catch (err) {
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchApps();
+  }, []);
+
   return (
     <section className="bg-[#F5F5F5] font-inter py-20">
       <div className="container w-11/12 mx-auto">
@@ -13,7 +34,11 @@ const TrendingApps = () => {
         </div>
 
         {/* grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5"></div>
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          {loading
+            ? Array.from({ length: 8 }).map(() => <Skeleton></Skeleton>)
+            : apps.map((app) => console.log(app))}
+        </div>
       </div>
     </section>
   );
