@@ -4,7 +4,7 @@ import { HiDownload } from "react-icons/hi";
 const App = ({ app }) => {
   const { title, image, ratingAvg, downloads } = app;
   return (
-    <div className="bg-white rounded-sm p-3 overflow-hidden shadow-sm cursor-pointer group">
+    <div className="bg-white rounded-sm p-3 overflow-hidden shadow-sm cursor-pointer group hover:drop-shadow-2xl transition-all duration-300 ease-in-out">
       {/* image */}
       <div className="relative overflow-hidden w-full h-72">
         <img
