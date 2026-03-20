@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
+import formatDownloads from "../utils/formatDownloads";
 
 const App = ({ app }) => {
   const { title, image, ratingAvg, downloads } = app;
@@ -22,7 +23,7 @@ const App = ({ app }) => {
           {/* downloads */}
           <span className="flex items-center gap-1 text-xs font-medium rounded-sm p-2 bg-[#F1F5E8] text-[#00D390]">
             <HiDownload></HiDownload>
-            {downloads}
+            {formatDownloads(downloads)}
           </span>
           {/* rating */}
           <span className="flex items-center gap-1 text-xs font-medium rounded-sm p-2 bg-[#FFF0E1] text-[#FF8811]">
