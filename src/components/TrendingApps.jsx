@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import Skeleton from "./Skeleton";
 import axios from "axios";
 import toast from "react-hot-toast";
+import App from "./App";
+import { useNavigate } from "react-router";
 
 const TrendingApps = () => {
   const [apps, setApps] = useState([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchApps = async () => {
@@ -38,7 +41,17 @@ const TrendingApps = () => {
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
           {loading
             ? Array.from({ length: 8 }).map(() => <Skeleton></Skeleton>)
-            : apps.map((app) => console.log(app))}
+            : apps.map((app) => <App key={app.id} app={app}></App>)}
+        </div>
+
+        {/* button */}
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => navigate("/apps")}
+            className="btn rounded-sm font-semibold px-10 py-3 text-white border-none bg-[linear-gradient(140deg,#632EE3,#9F62F2)]"
+          >
+            Show All
+          </button>
         </div>
       </div>
     </section>
