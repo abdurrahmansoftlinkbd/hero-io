@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Skeleton from "./Skeleton";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 const TrendingApps = () => {
   const [apps, setApps] = useState([]);
@@ -12,7 +13,7 @@ const TrendingApps = () => {
         const res = await axios.get("/apps.json");
         setApps(res.data.slice(0, 8));
       } catch (err) {
-        console.error(err);
+        toast.error("Failed to fetch apps. ", err);
       } finally {
         setLoading(false);
       }
