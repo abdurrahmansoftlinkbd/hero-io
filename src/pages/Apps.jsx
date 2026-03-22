@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import Skeleton from "../components/Skeleton";
 import App from "../components/App";
 import NoAppFound from "./NoAppFound";
+import { Helmet } from "react-helmet-async";
 
 const Apps = () => {
   const [apps, setApps] = useState([]);
@@ -34,6 +35,9 @@ const Apps = () => {
 
   return (
     <section className="bg-[#F5F5F5] font-inter py-20">
+      <Helmet>
+        <title>Apps</title>
+      </Helmet>
       <div className="container w-11/12 mx-auto">
         {/* heading */}
         <div className="text-center mb-10">
