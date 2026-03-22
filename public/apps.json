@@ -75,7 +75,7 @@
     "id": 5,
     "title": "Netflix",
     "companyName": "Netflix, Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png",
+    "image": "https://images.icon-icons.com/2699/PNG/512/netflix_logo_icon_170919.png",
     "description": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. Watch as much as you want, whenever you want.",
     "size": 112,
     "reviews": 19600000,
@@ -109,20 +109,35 @@
   },
   {
     "id": 7,
-    "title": "Duolingo",
-    "companyName": "Duolingo, Inc.",
-    "image": "https://brandlogos.net/wp-content/uploads/2023/09/duolingo_icon-logo_brandlogos.net_aru6q.png",
-    "description": "Duolingo is the world's most popular language-learning platform. With gamified lessons, streaks, and over 40 languages available, it makes learning a new language fun, effective, and free for everyone.",
-    "size": 54,
-    "reviews": 14200000,
-    "ratingAvg": 4.7,
-    "downloads": 500000000,
+    "title": "Figma",
+    "companyName": "Figma, Inc.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+    "description": "Figma is a collaborative interface design tool used by product teams worldwide. Design, prototype, and gather feedback all in one place. It works in the browser, so your team can access it from any device.",
+    "size": 58,
+    "reviews": 4600000,
+    "ratingAvg": 4.8,
+    "downloads": 10000000,
     "ratings": [
-      { "name": "1 star", "count": 142000 },
-      { "name": "2 star", "count": 284000 },
-      { "name": "3 star", "count": 568000 },
-      { "name": "4 star", "count": 2272000 },
-      { "name": "5 star", "count": 10934000 }
+      {
+        "name": "1 star",
+        "count": 46000
+      },
+      {
+        "name": "2 star",
+        "count": 92000
+      },
+      {
+        "name": "3 star",
+        "count": 138000
+      },
+      {
+        "name": "4 star",
+        "count": 690000
+      },
+      {
+        "name": "5 star",
+        "count": 3634000
+      }
     ]
   },
   {
@@ -147,7 +162,7 @@
     "id": 9,
     "title": "Canva",
     "companyName": "Canva Pty Ltd",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Canva_Logo.png/225px-Canva_Logo.png",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oMAAe6rM5sL2vKX0-30c3LWBiH2LRU4Yrw&s",
     "description": "Canva is a graphic design platform used to create social media graphics, presentations, posters, documents and other visual content. It's available on web and mobile, and integrates millions of images, fonts, templates and illustrations.",
     "size": 89,
     "reviews": 9800000,
@@ -165,7 +180,7 @@
     "id": 10,
     "title": "Zoom",
     "companyName": "Zoom Video Communications",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Zoom_Communications_Logo.svg/1200px-Zoom_Communications_Logo.svg.png",
+    "image": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxtPV1zYJfBPveATOCg5xpTv0egX1K39vjtoMAJ1OB_Y6DoH38.acPVxr63q1Hp_nxCZ2A5qNv2VT7GapXKZFLdU-&format=source",
     "description": "Zoom is a cloud-based video conferencing service you can use to virtually meet with others - either by video or audio-only or both, while conducting live chats. It supports webinars, virtual events, and team collaboration.",
     "size": 108,
     "reviews": 11400000,
@@ -201,7 +216,7 @@
     "id": 12,
     "title": "Google Maps",
     "companyName": "Google LLC",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/512px-Google_Maps_Logo_2020.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Google_Maps_icon_%282026%29.svg/1280px-Google_Maps_icon_%282026%29.svg.png",
     "description": "Google Maps is a web mapping service that offers satellite imagery, aerial photography, street maps, 360° interactive panoramic views of streets, real-time traffic conditions, and route planning for traveling by foot, car, bicycle and air.",
     "size": 118,
     "reviews": 47500000,
@@ -217,45 +232,75 @@
   },
   {
     "id": 13,
-    "title": "Shazam",
-    "companyName": "Apple Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Shazam_logo.svg/800px-Shazam_logo.svg.png",
-    "description": "Shazam is a music recognition app that identifies songs based on a short sample played using a device's microphone. It can identify music, movies, advertising, and television shows based on a short sample of audio.",
-    "size": 43,
-    "reviews": 6800000,
-    "ratingAvg": 4.7,
-    "downloads": 1000000000,
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Microsoft_Office_Teams_%282025%E2%80%93present%29.svg/1280px-Microsoft_Office_Teams_%282025%E2%80%93present%29.svg.png",
+    "description": "Microsoft Teams is a collaboration platform combining chat, video meetings, file storage, and app integrations. Built for businesses and schools, it keeps teams connected and productive from anywhere in the world.",
+    "size": 187,
+    "reviews": 16400000,
+    "ratingAvg": 4.2,
+    "downloads": 500000000,
     "ratings": [
-      { "name": "1 star", "count": 68000 },
-      { "name": "2 star", "count": 136000 },
-      { "name": "3 star", "count": 272000 },
-      { "name": "4 star", "count": 1360000 },
-      { "name": "5 star", "count": 4964000 }
+      {
+        "name": "1 star",
+        "count": 656000
+      },
+      {
+        "name": "2 star",
+        "count": 820000
+      },
+      {
+        "name": "3 star",
+        "count": 1312000
+      },
+      {
+        "name": "4 star",
+        "count": 3280000
+      },
+      {
+        "name": "5 star",
+        "count": 10332000
+      }
     ]
   },
   {
     "id": 14,
-    "title": "Headspace",
-    "companyName": "Headspace Health",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Headspace_Brand_Logo.svg/800px-Headspace_Brand_Logo.svg.png",
-    "description": "Headspace is a digital health platform providing guided meditation, mindfulness, and sleep content. It helps users reduce stress, improve focus, sleep better, and build healthier habits through daily mindfulness exercises.",
-    "size": 78,
-    "reviews": 4100000,
-    "ratingAvg": 4.7,
-    "downloads": 70000000,
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png",
+    "description": "LinkedIn is the world's largest professional networking platform. Build your professional profile, connect with colleagues, search for jobs, share industry insights, and grow your career with millions of professionals globally.",
+    "size": 139,
+    "reviews": 26700000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
     "ratings": [
-      { "name": "1 star", "count": 41000 },
-      { "name": "2 star", "count": 82000 },
-      { "name": "3 star", "count": 205000 },
-      { "name": "4 star", "count": 820000 },
-      { "name": "5 star", "count": 2952000 }
+      {
+        "name": "1 star",
+        "count": 801000
+      },
+      {
+        "name": "2 star",
+        "count": 1068000
+      },
+      {
+        "name": "3 star",
+        "count": 1602000
+      },
+      {
+        "name": "4 star",
+        "count": 5340000
+      },
+      {
+        "name": "5 star",
+        "count": 17889000
+      }
     ]
   },
   {
     "id": 15,
     "title": "Uber",
     "companyName": "Uber Technologies, Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Uber_logo_2018.svg/800px-Uber_logo_2018.svg.png",
+    "image": "https://freelogopng.com/images/all_img/1659761297uber-icon.png",
     "description": "Uber is a ride-hailing app that connects drivers and riders. Book a ride in minutes, track your driver in real time, pay seamlessly, and rate your experience. Uber also offers food delivery, freight services, and electric bike rentals.",
     "size": 153,
     "reviews": 33600000,
@@ -273,7 +318,7 @@
     "id": 16,
     "title": "Airbnb",
     "companyName": "Airbnb, Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/800px-Airbnb_Logo_B%C3%A9lo.svg.png",
+    "image": "https://static.vecteezy.com/system/resources/previews/045/588/943/non_2x/airbnb-logo-online-platform-for-rental-housing-free-vector.jpg",
     "description": "Airbnb is an online marketplace for short-term homestays and experiences. Book unique accommodations — from private rooms to entire homes — or share your space and earn extra income as a host anywhere in the world.",
     "size": 91,
     "reviews": 7900000,
@@ -291,7 +336,7 @@
     "id": 17,
     "title": "Robinhood",
     "companyName": "Robinhood Markets, Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Robinhood_Markets_Logo.png/300px-Robinhood_Markets_Logo.png",
+    "image": "https://logos-world.net/wp-content/uploads/2024/12/Robinhood-Symbol.png",
     "description": "Robinhood is a commission-free investing app that lets users buy and sell stocks, ETFs, options, and cryptocurrencies. With a simple interface and real-time data, it democratizes finance for a new generation of investors.",
     "size": 88,
     "reviews": 5600000,
@@ -309,7 +354,7 @@
     "id": 18,
     "title": "Todoist",
     "companyName": "Doist Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Todoist_app_logo.png/300px-Todoist_app_logo.png",
+    "image": "https://www.leadforensics.com/wp-content/uploads/2021/12/todoist-300x300.png",
     "description": "Todoist is a task management app that helps you organize and prioritize your tasks. With features like recurring deadlines, project collaboration, productivity tracking, and integrations with 60+ apps, it keeps your work and life on track.",
     "size": 49,
     "reviews": 2900000,
@@ -327,7 +372,7 @@
     "id": 19,
     "title": "Google Pay",
     "companyName": "Google LLC",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/800px-Google_Pay_Logo.svg.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_Play_2022_icon.svg/960px-Google_Play_2022_icon.svg.png",
     "description": "Google Pay is a digital wallet platform and online payment system developed by Google to power in-app and tap-to-pay purchases on mobile devices. It supports money transfers, bill splitting, and merchant offers.",
     "size": 57,
     "reviews": 18200000,
@@ -345,7 +390,7 @@
     "id": 20,
     "title": "Calm",
     "companyName": "Calm.com, Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Calm_app_logo.png/300px-Calm_app_logo.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Calm_%28company%29_logo.svg",
     "description": "Calm is a mindfulness app focused on meditation, sleep, and relaxation. Featuring sleep stories narrated by celebrities, guided meditation sessions, breathing exercises, and soothing music, Calm helps reduce anxiety and improve sleep quality.",
     "size": 82,
     "reviews": 3700000,
@@ -363,7 +408,7 @@
     "id": 21,
     "title": "Discord",
     "companyName": "Discord Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Discord_logo.svg/800px-Discord_logo.svg.png",
+    "image": "https://cdn-icons-png.flaticon.com/512/5968/5968756.png",
     "description": "Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called servers.",
     "size": 93,
     "reviews": 17800000,
@@ -381,7 +426,7 @@
     "id": 22,
     "title": "Shopify",
     "companyName": "Shopify Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/800px-Shopify_logo_2018.svg.png",
+    "image": "https://play-lh.googleusercontent.com/PLiiyY4mk3jTy7XxZj9FGvztn12qdefPWJtxDfpBCvPUt4PBdhdjiQPJ5EbgeAZZLw",
     "description": "Shopify is a commerce platform that allows anyone to set up an online store and sell their products. Manage inventory, process payments, fulfill orders, track analytics, and grow your business from one intuitive dashboard.",
     "size": 74,
     "reviews": 3100000,
@@ -399,7 +444,7 @@
     "id": 23,
     "title": "Adobe Lightroom",
     "companyName": "Adobe Inc.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/512px-Adobe_Photoshop_Lightroom_CC_logo.svg.png",
+    "image": "https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxneokBJ0GAZvX9IDejsY5F91GKhlXIJ7xAXi4f3XT1aoyW1iZvDF9aNqva9FeD0JP_q5WXbqJGy6o.YRY7JH.gE-&format=source",
     "description": "Adobe Lightroom is a powerful photo editing and organization app. Edit RAW files with professional-grade tools, apply presets, batch edit, and sync your photos across devices with seamless Adobe Creative Cloud integration.",
     "size": 123,
     "reviews": 8600000,
@@ -411,6 +456,39 @@
       { "name": "3 star", "count": 344000 },
       { "name": "4 star", "count": 1720000 },
       { "name": "5 star", "count": 6278000 }
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Twitch",
+    "companyName": "Amazon.com, Inc.",
+    "image": "https://img.freepik.com/premium-vector/twitch-logo_628407-1684.jpg?semt=ais_hybrid&w=740&q=80",
+    "description": "Twitch is the world's leading live streaming platform for gamers, artists, musicians, and creators. Watch live streams, chat with communities, subscribe to your favorite creators, and go live yourself.",
+    "size": 144,
+    "reviews": 9400000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      {
+        "name": "1 star",
+        "count": 188000
+      },
+      {
+        "name": "2 star",
+        "count": 282000
+      },
+      {
+        "name": "3 star",
+        "count": 470000
+      },
+      {
+        "name": "4 star",
+        "count": 1880000
+      },
+      {
+        "name": "5 star",
+        "count": 6580000
+      }
     ]
   }
 ]
