@@ -1,11 +1,16 @@
 import { FaStar } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import formatDownloads from "../utils/formatDownloads";
+import { useNavigate } from "react-router";
 
 const App = ({ app }) => {
-  const { title, image, ratingAvg, downloads } = app;
+  const navigate = useNavigate();
+  const { id, title, image, ratingAvg, downloads } = app;
   return (
-    <div className="bg-white rounded-sm p-3 overflow-hidden shadow-sm cursor-pointer group hover:drop-shadow-2xl transition-all duration-300 ease-in-out">
+    <div
+      onClick={() => navigate(`/apps/${id}`)}
+      className="bg-white rounded-sm p-3 overflow-hidden shadow-sm cursor-pointer group hover:drop-shadow-2xl transition-all duration-300 ease-in-out"
+    >
       {/* image */}
       <div className="relative overflow-hidden w-full h-72">
         <img
