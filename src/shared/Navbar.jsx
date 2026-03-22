@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../assets/logo.png";
 import GradientButton from "./GradientButton";
 import { FaGithub } from "react-icons/fa";
@@ -88,10 +88,15 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <GradientButton
-            icon={<FaGithub size={20} />}
-            text="Contribute"
-          ></GradientButton>
+          <Link
+            target="_blank"
+            to="https://github.com/abdurrahmansoftlinkbd/hero-io"
+          >
+            <GradientButton
+              icon={<FaGithub size={20} />}
+              text="Contribute"
+            ></GradientButton>
+          </Link>
         </div>
       </div>
     </nav>
