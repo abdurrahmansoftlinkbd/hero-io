@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Apps from "../pages/Apps";
 import AppDetails from "../pages/AppDetails";
 import axios from "axios";
+import NoAppFound from "../pages/NoAppFound";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
           const app = res.data.find((a) => a.id === Number(params.id));
           return app;
         },
+        errorElement: <NoAppFound></NoAppFound>,
       },
     ],
   },
