@@ -1,9 +1,24 @@
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router";
+import Stat from "../components/Stat";
+import download from "../assets/icon-downloads.png";
+import ratings from "../assets/icon-ratings.png";
+import review from "../assets/icon-review.png";
+import formatDownloads from "../utils/formatDownloads";
+import { useState } from "react";
+import toast from "react-hot-toast";
 
 const AppDetails = () => {
+  const [installed, setInstalled] = useState(false);
+
   const app = useLoaderData();
-  const { title, image, companyName } = app;
+  const { title, image, companyName, size, reviews, ratingAvg, downloads } =
+    app;
+
+  const handleInstall = () => {
+    setInstalled(true);
+    toast.success(`${title} installed successfully.`);
+  };
 
   return (
     <>
@@ -12,7 +27,7 @@ const AppDetails = () => {
       </Helmet>
 
       <section className="bg-[#F5F5F5] font-inter py-20">
-        <div className="container w-11/12 mx-auto space-y-10">
+        <div className="container w-11/12 mx-auto">
           {/* app info */}
           <div className="card md:card-side gap-10">
             {/* image */}
@@ -28,15 +43,44 @@ const AppDetails = () => {
               <h1 className="card-title justify-center lg:justify-start text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#001931] leading-tight">
                 {title}
               </h1>
-              <p className="text-[#627382] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                Developed by{" "}
-                <span className="font-semibold text-[#632EE3]">
-                  {companyName}
+              <div>
+                <span className="text-[#627382] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
+                  Developed by{" "}
+                  <span className="font-semibold text-[#632EE3]">
+                    {companyName}
+                  </span>
                 </span>
-              </p>
+              </div>
+              <div className="divider"></div>
+              {/* stats */}
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-16 pb-4">
+                <Stat
+                  img={download}
+                  label="Downloads"
+                  value={formatDownloads(downloads)}
+                ></Stat>
+                <Stat
+                  img={ratings}
+                  label="Average Ratings"
+                  value={ratingAvg}
+                ></Stat>
+                <Stat
+                  img={review}
+                  label="Total Reviews"
+                  value={formatDownloads(reviews)}
+                ></Stat>
+              </div>
+              {/* button */}
+              <div className="card-actions justify-center lg:justify-start mt-2">
+                <button
+                  onClick={handleInstall}
+                  disabled={installed}
+                  className="w-full sm:w-auto inline-flex items-center justify-center"
+                >
+                  {installed ? "Installed" : `Install Now (${size})`}
+                </button>
+              </div>
             </div>
-            {/* stats */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mt-3 pb-4 border-b border-gray-100"></div>
           </div>
         </div>
       </section>
