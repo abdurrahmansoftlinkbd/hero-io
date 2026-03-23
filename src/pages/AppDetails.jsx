@@ -17,10 +17,9 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { installApp, isAppInstalled } from "../utils/installedAppsStorage";
 
 const AppDetails = () => {
-  const [installed, setInstalled] = useState(false);
-
   const app = useLoaderData();
   const {
     title,
@@ -32,8 +31,10 @@ const AppDetails = () => {
     ratingAvg,
     downloads,
   } = app;
+  const [installed, setInstalled] = useState(() => isAppInstalled(app.id));
 
   const handleInstall = () => {
+    installApp(app);
     setInstalled(true);
     toast.success(`${title} installed successfully.`);
   };
