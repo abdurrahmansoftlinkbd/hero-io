@@ -8,18 +8,40 @@ import formatDownloads from "../utils/formatDownloads";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import formatSize from "../utils/formatSize";
+import {
+  Bar,
+  BarChart,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const AppDetails = () => {
   const [installed, setInstalled] = useState(false);
 
   const app = useLoaderData();
-  const { title, image, companyName, size, reviews, ratingAvg, downloads } =
-    app;
+  const {
+    title,
+    image,
+    description,
+    companyName,
+    size,
+    reviews,
+    ratingAvg,
+    downloads,
+  } = app;
 
   const handleInstall = () => {
     setInstalled(true);
     toast.success(`${title} installed successfully.`);
   };
+
+  const chartData = [...app.ratings].reverse().map((r) => ({
+    name: r.name,
+    count: r.count,
+  }));
 
   return (
     <>
@@ -32,7 +54,7 @@ const AppDetails = () => {
           {/* app info */}
           <div className="card md:card-side gap-10">
             {/* image */}
-            <figure className="lg:w-80 shrink-0">
+            <figure className="w-80 shrink-0">
               <img
                 src={image}
                 alt={title}
@@ -88,7 +110,47 @@ const AppDetails = () => {
               </div>
             </div>
           </div>
+
           <div className="divider my-6"></div>
+
+          {/* ratings */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">Ratings</h2>
+            {/* chart */}
+            <ResponsiveContainer width="100%" height={256}>
+              <BarChart data={chartData} layout="vertical" barSize={32}>
+                <XAxis
+                  type="number"
+                  tick={{ fontSize: 18, fill: "#627382" }}
+                  axisLine={false}
+                  tickLine={false}
+                  tickFormatter={(v) => v.toLocaleString()}
+                />
+                <YAxis
+                  type="category"
+                  dataKey="name"
+                  tick={{ fontSize: 18, fill: "#627382" }}
+                  axisLine={false}
+                  tickLine={false}
+                  width={50}
+                />
+                <Tooltip cursor={{ fill: "rgba(99,46,227,0.05)", radius: 6 }} />
+                <Bar dataKey="count">
+                  {chartData.map((entry, index) => (
+                    <Cell key={index} fill="#FF8811" />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="divider my-6"></div>
+
+          {/* description */}
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">Description</h2>
+            <p className="text-xl text-[#627382]">{description}</p>
+          </div>
         </div>
       </section>
     </>
