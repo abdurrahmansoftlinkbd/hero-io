@@ -5,11 +5,13 @@ import Apps from "../pages/Apps";
 import AppDetails from "../pages/AppDetails";
 import axios from "axios";
 import NoAppFound from "../pages/NoAppFound";
+import PageNotFound from "../pages/PageNotFound";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement: <PageNotFound></PageNotFound>,
     children: [
       { index: true, Component: Home },
       {
