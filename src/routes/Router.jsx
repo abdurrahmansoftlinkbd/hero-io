@@ -6,6 +6,7 @@ import AppDetails from "../pages/AppDetails";
 import axios from "axios";
 import NoAppFound from "../pages/NoAppFound";
 import PageNotFound from "../pages/PageNotFound";
+import Installation from "../pages/Installation";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
           return app;
         },
         errorElement: <NoAppFound></NoAppFound>,
+      },
+      {
+        path: "/installation",
+        Component: Installation,
       },
     ],
   },
