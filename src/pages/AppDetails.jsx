@@ -7,6 +7,7 @@ import review from "../assets/icon-review.png";
 import formatDownloads from "../utils/formatDownloads";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import formatSize from "../utils/formatSize";
 
 const AppDetails = () => {
   const [installed, setInstalled] = useState(false);
@@ -53,7 +54,7 @@ const AppDetails = () => {
               </div>
               <div className="divider"></div>
               {/* stats */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-16 pb-4">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-16">
                 <Stat
                   img={download}
                   label="Downloads"
@@ -71,17 +72,23 @@ const AppDetails = () => {
                 ></Stat>
               </div>
               {/* button */}
-              <div className="card-actions justify-center lg:justify-start mt-2">
+              <div className="card-actions justify-center lg:justify-start mt-5">
                 <button
                   onClick={handleInstall}
                   disabled={installed}
-                  className="w-full sm:w-auto inline-flex items-center justify-center"
+                  className="btn btn-block sm:w-auto inline-flex border-none text-white items-center justify-center gap-2 px-5 py-7 rounded-sm text-sm sm:text-base md:text-lg lg:text-xl font-semibold shadow transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+                  style={{
+                    background: installed ? "#6b7280" : "#00D390",
+                  }}
                 >
-                  {installed ? "Installed" : `Install Now (${size})`}
+                  {installed
+                    ? "Installed"
+                    : `Install Now (${formatSize(size)})`}
                 </button>
               </div>
             </div>
           </div>
+          <div className="divider my-6"></div>
         </div>
       </section>
     </>
