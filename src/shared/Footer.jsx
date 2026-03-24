@@ -12,7 +12,7 @@ const FOOTER_LINKS = [
     heading: "Explore",
     links: [
       { label: "Home", to: "/" },
-      { label: "All Apps", to: "/apps" },
+      { label: "Apps", to: "/apps" },
       { label: "Installation", to: "/installation" },
       { label: "Trending", to: "/apps" },
     ],
