@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { getInstalledApps, uninstallApp } from "../utils/installedAppsStorage";
 import toast from "react-hot-toast";
+import InstalledApp from "../components/InstalledApp";
 
 const Installation = () => {
   const [apps, setApps] = useState(() => getInstalledApps());
@@ -10,7 +11,7 @@ const Installation = () => {
   const handleUninstall = (app) => {
     uninstallApp(app.id);
     setApps(getInstalledApps());
-    toast.success(`${app.title} uninstalled.`);
+    toast.success(`${app.title} uninstalled successfully.`);
   };
 
   const SORT_OPTIONS = [
@@ -68,6 +69,17 @@ const Installation = () => {
               ))}
             </select>
           </div>
+
+          {/* list */}
+          <ul className="list gap-3">
+            {sorted.map((app) => (
+              <InstalledApp
+                key={app.id}
+                app={app}
+                handleUninstall={handleUninstall}
+              ></InstalledApp>
+            ))}
+          </ul>
         </div>
       </section>
     </>
