@@ -1,9 +1,11 @@
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import logo from "../assets/logo.png";
 import GradientButton from "./GradientButton";
 import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   const links = (
     <>
       <li>
@@ -75,7 +77,11 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <div className="flex items-center gap-2 ml-2">
+          {/* logo */}
+          <div
+            onClick={() => navigate("/")}
+            className="flex items-center gap-2 ml-2 cursor-pointer"
+          >
             <div className="w-10 h-10">
               <img src={logo} alt="logo" className="w-full" />
             </div>
