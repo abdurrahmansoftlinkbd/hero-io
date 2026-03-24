@@ -55,7 +55,7 @@ const AppDetails = () => {
           {/* app info */}
           <div className="card md:card-side gap-10">
             {/* image */}
-            <figure className="w-80 shrink-0">
+            <figure className="w-56 sm:w-60 md:w-64 lg:w-72 xl:w-80 mx-auto shrink-0">
               <img
                 src={image}
                 alt={title}
