@@ -41,7 +41,11 @@ const SOCIAL_LINKS = [
   { icon: <FaXTwitter />, href: "https://x.com", label: "X (Twitter)" },
   { icon: <FaLinkedinIn />, href: "https://linkedin.com", label: "LinkedIn" },
   { icon: <FaFacebookF />, href: "https://facebook.com", label: "Facebook" },
-  { icon: <FaGithub />, href: "https://github.com", label: "GitHub" },
+  {
+    icon: <FaGithub />,
+    href: "https://github.com/abdurrahmansoftlinkbd/hero-io",
+    label: "GitHub",
+  },
 ];
 
 const Footer = () => {
