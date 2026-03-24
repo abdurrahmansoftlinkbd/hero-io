@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { getInstalledApps, uninstallApp } from "../utils/installedAppsStorage";
 import toast from "react-hot-toast";
 import InstalledApp from "../components/InstalledApp";
+import NoAppInstalled from "../components/NoAppInstalled";
 
 const Installation = () => {
   const [apps, setApps] = useState(() => getInstalledApps());
@@ -72,13 +73,17 @@ const Installation = () => {
 
           {/* list */}
           <ul className="list gap-3">
-            {sorted.map((app) => (
-              <InstalledApp
-                key={app.id}
-                app={app}
-                handleUninstall={handleUninstall}
-              ></InstalledApp>
-            ))}
+            {sorted.length === 0 ? (
+              <NoAppInstalled></NoAppInstalled>
+            ) : (
+              sorted.map((app) => (
+                <InstalledApp
+                  key={app.id}
+                  app={app}
+                  handleUninstall={handleUninstall}
+                ></InstalledApp>
+              ))
+            )}
           </ul>
         </div>
       </section>
