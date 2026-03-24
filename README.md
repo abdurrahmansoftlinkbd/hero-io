@@ -1,4 +1,4 @@
-# Hero.io
+# HERO.IO
 
 A modern, fully responsive app store web application built with React 19. Browse trending apps, view detailed app information, install your favorites, and manage your installed apps all with smooth animations and a polished UI.
 
