@@ -67,14 +67,12 @@ const AppDetails = () => {
               <h1 className="card-title justify-center lg:justify-start text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#001931] leading-tight">
                 {title}
               </h1>
-              <div>
-                <span className="text-[#627382] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                  Developed by{" "}
-                  <span className="font-semibold text-[#632EE3]">
-                    {companyName}
-                  </span>
+              <h4 className="card-title text-[#627382] text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-normal justify-center lg:justify-start">
+                Developed by{" "}
+                <span className="font-semibold text-[#632EE3]">
+                  {companyName}
                 </span>
-              </div>
+              </h4>
               <div className="divider"></div>
               {/* stats */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 md:gap-16">
