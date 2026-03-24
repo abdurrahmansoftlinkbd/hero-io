@@ -12,7 +12,7 @@ const App = ({ app }) => {
       className="bg-white rounded-sm p-3 overflow-hidden shadow-sm cursor-pointer group hover:drop-shadow-2xl transition-all duration-300 ease-in-out"
     >
       {/* image */}
-      <div className="relative overflow-hidden w-full h-72">
+      <div className="relative overflow-hidden w-full h-52 sm:h-56 md:h-60 lg:h-64 xl:h-72">
         <img
           src={image}
           alt={title}
